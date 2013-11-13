@@ -63,7 +63,7 @@ textarea {
 }
 
 .wrapper {
-	background: url(../img/bg_opus_big.png) top center no-repeat;
+	background: url(../img/bg_opus_big.png) no-repeat;
 	background-position: 0 88px;
 	width: 100%;
 	min-height: 1000px;
@@ -91,13 +91,40 @@ header {
 		text-decoration: none;
 		margin-right: 42px;
 	}
-		span.cart a:hover { text-decoration: underline; }
+		span.cart a:hover, .reg-login a:hover { text-decoration: underline; }
 		span.cart i {
 			font-size: 18px;
 			vertical-align: middle;
 			padding-right: 12px;
 			text-shadow: 0px 1px 4px rgba(0, 0, 0, .75);
 		}
+.reg-login {
+	float: right;
+	margin-top: 17px;
+}
+	.reg-login a {;
+		font-size: 13px;
+		text-shadow: 0px 1px 3px rgba(0, 0, 0, .9);
+		line-height: 18px;
+		color: #d8d8d8;
+		text-decoration: none;
+		margin-left: 20px;
+	}
+
+.bread-nav { list-style-type: none; display: inline-block; margin-top: 17px; font-weight: 300; }
+	.bread-nav li { display: inline; line-height: 16px; text-shadow: 0px 1px 3px rgba(0, 0, 0, .9); color: white; font-size: 13px; }
+	.bread-nav li a { text-decoration: underline; color: white; }
+	.bread-nav li a:hover { text-decoration: underline; }
+	.bread-nav li:after {
+		font-family: 'icomoon';
+		content: "\e66a";
+		font-size: 14px;
+		vertical-align: middle;
+		color: white;
+		padding: 0px 3px;
+	}
+	.bread-nav li:last-child:after {content: ""; }
+
 
 .cs, .en {
 	height: 19px;
@@ -188,6 +215,49 @@ header form {
 	background: url(../img-slideshow/category-bg/bg-gloves.png) no-repeat;
 	height: 350px;
 }
+
+/* ==========================================================================
+   Styly pro Detail
+   ========================================================================== */
+.detail {
+	width: 790px;
+	float: right;
+	padding: 20px;
+}
+	.info-list { 
+		list-style-type: none;
+		background: url(../img/content-line.png) no-repeat center bottom;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		padding-left: 25px;
+	}
+	.info-list li { line-height: 18px; }
+	.info-list li:before {
+		font-family: 'icomoon';
+		content: "\e66a";
+		vertical-align: middle;
+	}
+
+.price-big {
+	background: url(../img/bg-price.png) no-repeat;
+	text-align: center;
+	width: 189px;
+	height: 79px;
+	margin-left: 25px;
+}
+	.price-big span {
+		font-weight: 300;
+		font-size: 25px;
+	}
+	span.price {
+		font-weight: 700;
+		display: inline-block;
+		margin-top: 15px;
+	}
+	span.availability {
+		font-size: 12px;
+		display: block;
+	}
 
 /* ==========================================================================
    Styly pro grid produktu
@@ -317,7 +387,7 @@ nav.container ul {
 			display: block;
 		}
 	
-	#slider2 li p {
+	#slider2 li p, #slider3 li p {
 		display: inline-block;
 		float: right;
 		font-size: 40px;
@@ -328,7 +398,7 @@ nav.container ul {
 		text-shadow: 0px 2px 5px rgba(0, 0, 0, .85);
 		padding-top: 100px;
 	}
-		#slider2 li p span {
+		#slider2 li p span, #slider3 li p span {
 			display: block;
 			font-weight: 700;
 			background: url(../img/line-in-slider.png) no-repeat center bottom;

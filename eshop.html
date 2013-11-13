@@ -11,7 +11,8 @@
 
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/jquery.bxslider.css">       
+        <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
+        <link rel="stylesheet" href="assets/css/jquery.fancybox.css">      
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,6 +41,15 @@
 		        	<div class="cart-flags">
 			        	<span class="cart"><i class="icon-cart"></i><a href="#" title="Nákupní košík">Nákupní košík je prázdný</a></span>
 			        	<a href="#" class="cs active" title="Česky">Česky</a><a href="#" class="en" title="English">English</a>
+			        </div>
+			        <ul class="bread-nav">
+        				<li><a href="#">Domů</a></li>
+        				<li><a href="#">Hráč</a></li>
+        				<li>Hokejové rukavice</li>
+        			</ul>
+        			<div class="reg-login">
+			        	<a href="#login" class="modal"><i class="icon-user"></i> Přihlášení</a>
+			        	<a href="#registration" class="modal"><i class="icon-user-add"></i> Registrace</a>
 			        </div>
 		        </div>
 	        </header>
@@ -175,6 +185,72 @@
 	        </section>
         </div>
         
+                <div style="display:none">
+        	<div id="login" class="clearfix"><a href="javascript:$.fancybox.close();" class="close"><i class="icon-cross"></i></a>
+        		<h3>Přihlášení uživatele</h3>
+        		<p>Jste již zákazníkem firmy VHV-Opus? Přihlaste se prosím pomocí vaší e-mailové adresy a hesla.</p>
+        		<form action="#">
+        			<input type="email" placeholder="E-mailová adresa">
+        			<input type="password" placeholder="Heslo">
+        			<button type="submit">Přihlásit se</button>
+        		</form>
+        		<a href="#" class="forgot">Zapoměli jste heslo?</a>
+        	</div>
+        </div>
+        
+        <div style="display:none">
+        	<div id="registration" class="clearfix"><a href="javascript:$.fancybox.close();" class="close"><i class="icon-cross"></i></a>
+        		<h3>Registrace</h3>
+        		<p>Ještě nejste zákazníkem firmy VHV-Opus? Před zadáním žádosti o rezervaci se musíte nejprve zaregistrovat.</p>
+        		<form action="#">
+        			<label for="druh">Druh zákazníka:<span class="require">*</span></label>
+        			<select name="druh" id="druh">
+        				<option selected="selected">Vyberte</option>
+        				<option value="soukroma_os">Soukromá osoba</option>
+        				<option value="firma">Firma / Podnikatel</option>
+        			</select>
+        			<fieldset>
+        				<legend>Přihlašovací údaje</legend>
+        				<label for="mail">E-mail:<span class="require">*</span></label><input name="mail" type="email" placeholder="E-mailová adresa">
+        				<label for="heslo">Heslo:<span class="require">*</span></label><input name="heslo" type="password" placeholder="Heslo">
+        				<label for="heslo2">Heslo znovu:<span class="require">*</span></label><input name="heslo2" type="password" placeholder="Heslo znovu">
+        			</fieldset>
+        			<fieldset>
+        				<legend>Osobní údaje</legend>
+        				<label for="osloveni">Oslovení:<span class="require">*</span></label><select name="osloveni" id="osloveni">
+	        				<option selected="selected">Oslovení</option>
+	        				<option value="mr">Pan</option>
+	        				<option value="mrs">Paní</option>
+	        			</select>
+        				<label for="jmeno">Křestní jméno:</label><input name="jmeno" type="text" placeholder="Křestní jméno">
+        				<label for="prijmeni">Přijmení:<span class="require">*</span></label><input name="prijmeni" type="text" placeholder="Příjmení">
+        				<label for="telefon">Telefon:<span class="require">*</span></label><input name="telefon" type="text" placeholder="Telefon">
+        			</fieldset>
+        			<fieldset>
+        				<legend>Adresa</legend>
+        				<label for="ulice">Ulice, č.p.:<span class="require">*</span></label><input name="ulice" type="text" placeholder="Ulice, č.p.">
+        				<label for="psc">PSČ:<span class="require">*</span></label><input name="psc" type="text" placeholder="PSČ">
+        				<label for="mesto">Město:<span class="require">*</span></label><input name="mesto" type="text" placeholder="Město">
+        			</fieldset>
+        			<fieldset>
+        				<legend>Firemní údaje</legend>
+        				<label for="firma">Název firmy:<span class="require">*</span></label><input name="firma" type="text" placeholder="Název firmy">
+        				<label for="web">Web:</label><input name="web" type="text" placeholder="Web">
+        				<label for="ico">IČO:</label><input name="ico" type="text" placeholder="IČO">
+        				<label for="dic">DIČ:</label><input name="dic" type="text" placeholder="DIČ">
+        			</fieldset>
+        			<fieldset>
+        				<legend>Registrace</legend>
+        				<p><input type="checkbox" name="souhlas"> Ano, souhlasím se zásadami pro ochranu osobních údajů.</p>
+        				<p style="font-weight:600;">Po odeslání obdržíte e-mail s dalšími pokyny k aktivaci vašeho účtu. Řiďte se prosím pokyny v tomto e-mailu.</p>
+        			</fieldset>
+        			<button type="submit">Registrovat</button>
+        		</form>
+        	</div>
+        </div>
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="assets/js/fancybox.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="assets/js/jquery.bxslider.min.js"></script>
         <script src="assets/js/main.js"></script>
