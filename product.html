@@ -46,7 +46,7 @@
         				<li><a href="#">Domů</a></li>
         				<li><a href="#">Hráč</a></li>
         				<li><a href="#">Hokejové rukavice</a></li>
-        				<li>3849 YTH BASIC 500</span>
+        				<li>Rukavice 3849 YTH BASIC 500</span>
         			</ul>
         			<div class="reg-login">
 			        	<a href="#login" class="modal"><i class="icon-user"></i> Přihlášení</a>
@@ -81,21 +81,137 @@
 	        	</section>
 	        	
 	        	<section class="container clearfix">
-		        	<div class="grid">
-		        		<div class="content-box detail">
-			        		<ul class="info-list">
-			        			<li>vnější povrch tvoří kvalitní umělá kůže</li>
-								<li>nové konstrukční řešení v oblasti manžety umožňuje volnost pohybu zápěstím a zároveň poskytuje vysokou ochranu</li>
-								<li>na dlaň je použita kvalitní a ověřená syntetická kůže CLARINO</li>
-								<li>ergonomicky tvarované třídílné chránění palce s integrovaným PE výliskem zaručuje vysokou ochranu v této oblasti</li>
-								<li>dvoudílné dělení prstů umožňuje dobrý úchop hokejky</li>
-								<li>lehké výplňové materiály bezpečně tlumí údery</li>
-								<li>perforovaný materiál v meziprstí a hraně ruky zajišťuje větrání a odvod vlhkosti</li>
-			        		</ul>
-			        		<div class="price-big">
-			        			<span class="price">1.999</span><span> Kč</span>
-			        			<span class="availability">skladem</span>
-			        		</div>
+		        	<div class="detail">
+		        		<div class="content-box">
+		        			<ul class="tabs">
+		        				<li><a href="#tab1" class="active">Detail produktu</a></li>
+		        				<li><a href="#tab2">Velikosti</a></li>
+		        				<li><a href="#tab3">Více produktů</a></li>
+		        			</ul>
+		        			<div id="tab1">
+				        		<ul class="info-list">
+				        			<li>vnější povrch tvoří kvalitní umělá kůže</li>
+									<li>nové konstrukční řešení v oblasti manžety umožňuje volnost pohybu zápěstím a zároveň poskytuje vysokou ochranu</li>
+									<li>na dlaň je použita kvalitní a ověřená syntetická kůže CLARINO</li>
+									<li>ergonomicky tvarované třídílné chránění palce s integrovaným PE výliskem zaručuje vysokou ochranu v této oblasti</li>
+									<li>dvoudílné dělení prstů umožňuje dobrý úchop hokejky</li>
+									<li>lehké výplňové materiály bezpečně tlumí údery</li>
+									<li>perforovaný materiál v meziprstí a hraně ruky zajišťuje větrání a odvod vlhkosti</li>
+				        		</ul>
+				        		<div class="price-big">
+				        			<span class="price">1.999</span><span> Kč</span>
+				        			<span class="availability">skladem</span>
+				        		</div>
+				        		<form action="">
+				        			<span class="size">
+				        				<label for="size">Velikost</label>
+					        			<select name="size" class="styled">
+					        				<option selected="selected">Vyberte</option>
+					        				<option value="small">Small</option>
+					        				<option value="medium">Medium</option>
+					        				<option value="large">Large</option>
+					        				<option value="xlarge">X Large</option>
+					        			</select>
+				        			</span>
+				        			<span class="color">
+					        			<label for="color">Barevná varianta</label>
+					        			<select name="color" class="styled">
+					        				<option selected="selected">Vyberte <i class="icon-arrow-down8"></i></option>
+					        				<option value="1">stříbrná/modrá</option>
+					        				<option value="2">černá/zlatá</option>
+					        			</select>
+				        			</span>
+				        			<span class="quantity">
+					        			<label for="quantity">Počet</label>
+					        			<input type="text" name="quantity" value="1">
+				        			</span>
+				        			<button type="submit" class="add-to" title="Přidat do košíku">Do košíku</button>
+				        		</form>
+		        			</div>
+		        			
+		        			<div id="tab2">
+		        				<h3>Tabulka všech velikostí</h3>
+		        				<table class="sizes">
+		        					<thead>
+		        						<th>označení velikosti</th>
+		        						<th>velikost</th>
+		        						<th>rozměry</th>
+		        					</thead>
+		        					<tbody>
+		        						<tr>
+		        							<td>boy velikost</td>
+		        							<td>9"</td>
+		        							<td>23 cm</td>
+		        						</tr>
+		        						<tr>
+		        							<td>boy velikost</td>
+		        							<td>10"</td>
+		        							<td>25 cm</td>
+		        						</tr>
+		        						<tr>
+		        							<td>junior velikost</td>
+		        							<td>11"</td>
+		        							<td>28 cm</td>
+		        						</tr>
+		        						<tr>
+		        							<td>junior velikost</td>
+		        							<td>12"</td>
+		        							<td>30 cm</td>
+		        						</tr>
+		        						<tr>
+		        							<td>senior velikost</td>
+		        							<td>13"</td>
+		        							<td>33 cm</td>
+		        						</tr>
+		        						<tr>
+		        							<td>senior velikost</td>
+		        							<td>14"</td>
+		        							<td>36 cm</td>
+		        						</tr>
+		        						<tr>
+		        							<td>senior velikost</td>
+		        							<td>15"</td>
+		        							<td>38 cm</td>
+		        						</tr>
+		        					</tbody>
+		        				</table>
+		        			</div>
+		        			
+		        			<div id="tab3">
+		        				<ul class="grid-list">
+				        			<li>
+					        			<a href="#"><div class="item">
+					        				<img src="storage/img-product/product3.png" alt="product2">
+					        				<i class="new"></i>
+					        			</div>
+					        			<span>3659 high 3500</span><div class="overlay"></div></a>
+				        			</li>
+				        			<li>
+					        			<a href="#"><div class="item">
+					        				<img src="storage/img-product/product2.png" alt="product2">
+					        			</div>
+					        			<span>3841 high 3500</span><div class="overlay"></div></a>
+				        			</li>
+				        			<li>
+					        			<a href="#"><div class="item">
+					        				<img src="storage/img-product/product4.png" alt="product2">
+					        			</div>
+					        			<span>3848 jr classic 2000</span><div class="overlay"></div></a>
+				        			</li>
+				        			<li>
+					        			<a href="#"><div class="item">
+					        				<img src="storage/img-product/product1.png" alt="product1">
+					        			</div>
+					        			<span>3849 yth basic 500</span><div class="overlay"></div></a>
+				        			</li>
+				        			<li>
+					        			<a href="#"><div class="item">
+					        				<img src="storage/img-product/product5.png" alt="product2">
+					        			</div>
+					        			<span>3847 sr classic 3000</span><div class="overlay"></div></a>
+				        			</li>
+				        		</ul>
+		        			</div>
 		        		</div>
 		        	</div>
 	        	</section>
@@ -201,6 +317,12 @@
         </div>
 
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="assets/js/jquery.customSelect.min.js"></script>
+        <script type="text/javascript">
+			$(function(){
+				$('select.styled').customSelect();	
+			});
+		</script>
         <script src="assets/js/fancybox.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="assets/js/jquery.bxslider.min.js"></script>
