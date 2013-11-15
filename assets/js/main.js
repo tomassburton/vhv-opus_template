@@ -54,3 +54,4 @@ $q('#slider3').bxSlider({
   captions: true,
   auto: false
 });
+

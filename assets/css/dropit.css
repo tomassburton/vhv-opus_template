@@ -1,0 +1,47 @@
+.dropit {
+    list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0; /* dropdown left or right */
+    z-index: 10000;
+    display: none;
+    min-width: 160px;
+    list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	background: rgba(0, 0, 0, 0.9);
+	padding-bottom: 5px;
+
+	box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+	-webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+	-moz-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+	-o-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+	-ms-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+
+	border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-o-border-radius: 0px 0px 5px 5px;
+	-ms-border-radius: 0px 0px 5px 5px;
+}
+.dropit .dropit-open .dropit-submenu li { display: block; }
+.dropit-submenu li {
+	padding: 0px 10px 0px 20px!important;
+	background: none!important;
+	line-height: 38px!important;
+}
+.dropit-submenu li a {
+	font-size: 14px;
+}
+.dropit-submenu li i {
+	vertical-align: middle;
+}
+.dropit-submenu li a:hover {
+	color: #bbbbbb;
+}
