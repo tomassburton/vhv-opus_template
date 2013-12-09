@@ -1,6 +1,6 @@
-#login { color: rgb(106, 106, 106); font-family: 'Open Sans'; width: 300px; padding: 15px; }
+#login, #oneTime { color: rgb(106, 106, 106); font-family: 'Open Sans'; width: 300px; padding: 15px; }
 #registration { color: rgb(106, 106, 106);; font-family: 'Open Sans'; width: 400px; padding: 15px; }
-#login h3, #registration h3, #reservation h3, #sign h3 {
+#login h3, #registration h3, #reservation h3, #sign h3, #oneTime h3 {
 	font-weight: 400;
 	color: rgb(106, 106, 106);
 	font-size: 18px;
@@ -9,21 +9,21 @@
 			
 	display: block;
 }
-	#login p, #registration p {
+	#login p, #registration p, #oneTime p {
 		margin-top: 20px;
 	}
-	#login .close, #registration .close {
+	#login .close, #registration .close, #oneTime .close {
 		position: absolute;
 		right: 15px;
 		text-decoration: none;
 		color: rgb(119, 119, 119);
 		font-size: 15px;
 	}
-	#login .close:hover, #registration .close:hover { color: rgba(153, 0, 0, 1); }
-	#login form, #registration form {
+	#login .close:hover, #registration .close:hover, #oneTime .close:hover { color: rgba(153, 0, 0, 1); }
+	#login form, #registration form, #oneTime form {
 		margin: 20px 0;
 	}
-	#login input[type='email'], #login input[type='password'] {
+	#login input[type='email'], #login input[type='password'], #oneTime input[type='email'], #oneTime input[type='text'] {
 		font-family: 'Open Sans';
 		font-weight: 300;
 		font-size: 14px;
@@ -39,7 +39,7 @@
 	::-moz-placeholder { color: rgb(106, 106, 106); } /* firefox 19+ */
 	:-ms-input-placeholder { color: rgb(106, 106, 106); } /* ie */
 	input:-moz-placeholder { color: rgb(106, 106, 106); }
-	#login button, #registration button {
+	#login button, #registration button, #oneTime button {
 		background: rgb(106, 106, 106);
 		margin-top: 20px;
 		padding: 8px 10px;
@@ -51,7 +51,7 @@
 		display: block;
 		color: white;
 		}
-	#login button:hover, #registration button:hover { background: rgba(153, 153, 153, 1); }
+	#login button:hover, #registration button:hover, #oneTime button:hover { background: rgba(153, 153, 153, 1); }
 	#login a {
 		color: rgb(106, 106, 106);
 	}

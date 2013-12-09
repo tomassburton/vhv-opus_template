@@ -92,7 +92,7 @@
 		        		</ul>
 		        		<span class="left-corner"></span><span class="right-corner"></span>
 		        		<div class="content-box">
-		        			<p class="step-four"><i class="icon-info2"></i> <a href="#login" class="modal">Přihlaště se</a>, <a href="#registration" class="modal">zaregistrujte se</a>, nebo zvolte <a href="">jednorázový nákup</a> bez registrace.</p>
+		        			<p class="step-four"><i class="icon-info2"></i> <a href="#login" class="modal">Přihlaště se</a>, <a href="#registration" class="modal">zaregistrujte se</a>, nebo zvolte <a href="#oneTime" class="modal">jednorázový nákup</a> bez registrace.</p>
 		        			<div class="soucet">
 		        				<table>
 		        					<tr>
@@ -151,7 +151,7 @@
 	        </section>
         </div>
         
-                <div style="display:none">
+        <div style="display:none">
         	<div id="login" class="clearfix"><a href="javascript:$.fancybox.close();" class="close"><i class="icon-cross"></i></a>
         		<h3>Přihlášení uživatele</h3>
         		<p>Jste již zákazníkem firmy VHV-Opus? Přihlaste se prosím pomocí vaší e-mailové adresy a hesla.</p>
@@ -211,6 +211,18 @@
         				<p style="font-weight:600;">Po odeslání obdržíte e-mail s dalšími pokyny k aktivaci vašeho účtu. Řiďte se prosím pokyny v tomto e-mailu.</p>
         			</fieldset>
         			<button type="submit">Registrovat</button>
+        		</form>
+        	</div>
+        </div>
+        
+        <div style="display:none">
+        	<div id="oneTime" class="clearfix"><a href="javascript:$.fancybox.close();" class="close"><i class="icon-cross"></i></a>
+        		<h3>Jednorázový nákup</h3>
+        		<p>Tady to bude podle toho, co si vybere v přechozím kroku...</p>
+        		<form action="#">
+        			<input type="email" placeholder="E-mailová adresa">
+        			<input type="text" placeholder="Telefonní číslo">
+        			<button type="submit">Pokračovat</button>
         		</form>
         	</div>
         </div>
