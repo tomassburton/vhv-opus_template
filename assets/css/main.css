@@ -64,8 +64,8 @@ textarea {
 }
 
 .wrapper {
-	background: url(../img/bg_opus_big.png) no-repeat;
-	background-position: 0 88px;
+	background: url(../img/bg_opus_big.png) no-repeat center;
+	background-position: center 88px;
 	width: 100%;
 	min-height: 1000px;
 }
@@ -445,6 +445,18 @@ span.quantity { display: inline-block; margin-left: 20px; }
 		padding: 20px 20px 0px 20px;
 		min-height: 20px;
 }
+.cart-box .content-box {
+		color: white;
+		background: rgba(0, 0, 0, 0.5);
+		box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+		-webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+		-moz-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+		-o-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+		-ms-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+		
+		padding: 20px 20px 0px 20px;
+		min-height: 490px;
+}
 .grid-list {
 	list-style-type: none;
 	display: block;
@@ -600,6 +612,9 @@ nav.container ul {
 .grid {
 	margin-top: 30px;
 }
+.cart-box {
+	margin-top: 10px;
+}
 	.left h2 {
 		background: url(../img/bg-lista.png);
 		width: 600px;
@@ -633,6 +648,44 @@ nav.container ul {
 		margin-left: -10px;
 		padding: 0 30px;
 	}
+	ul.steps {
+		list-style-type: none;
+		line-height: 40px;
+		width: 981px!important;
+		margin-left: -10px;
+	}
+		ul.steps li {display: inline-table; }
+		ul.steps li.stepOne a {
+			text-indent: -9999px;
+			background: url(../img/1-kosik-a.png) no-repeat;
+			width: 246px;
+			height: 40px;
+			display: inline-table;
+		}
+		ul.steps li.stepTwo a {
+			text-indent: -9999px;
+			background: url(../img/2-kosik.png) no-repeat;
+			width: 245px;
+			height: 40px;
+			display: inline-table;
+		}
+			ul.steps li.stepTwo.active a { background: url(../img/2-kosik-a.png) no-repeat; }
+		ul.steps li.stepThree a {
+			text-indent: -9999px;
+			background: url(../img/3-kosik.png) no-repeat;
+			width: 245px;
+			height: 40px;
+			display: inline-table;
+		}
+			ul.steps li.stepThree.active a { background: url(../img/3-kosik-a.png) no-repeat; }
+		ul.steps li.stepFour a {
+			text-indent: -9999px;
+			background: url(../img/4-kosik.png) no-repeat;
+			width: 245px;
+			height: 40px;
+			display: inline-table;
+		}
+			ul.steps li.stepFour.active a { background: url(../img/4-kosik-a.png) no-repeat; }
 	span.left-corner {
 		background: url(../img/bg-lista-left-down.png) no-repeat;
 		height: 7px;
@@ -659,7 +712,7 @@ nav.container ul {
 		background: -ms-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
 		
 		padding: 20px;
-		min-height: 279px; /*Kvůli homepage aby byli stejné sloupce!!!*/
+		/*min-height: 279px; Kvůli homepage aby byli stejné sloupce!!!*/
 	}
 		.content-box p {
 			line-height: 18px;
@@ -674,7 +727,7 @@ nav.container ul {
 		ul.news span {
 			color: #f02424;
 		}
-		ul.news li { margin-bottom: 15px; } ul.news li:last-of-type { margin: 0; }
+		ul.news li, ul.side-nav li { margin-bottom: 15px; } ul.news li:last-of-type, ul.side-nav li:last-of-type { margin: 0; }
 		ul.news li a {
 			color: white;
 			text-decoration: none;
@@ -683,6 +736,12 @@ nav.container ul {
 		ul.news li a:hover {
 			text-decoration: underline;
 		}
+	ul.side-nav { list-style-type: none; }
+	ul.side-nav li a { color: white; text-decoration: none; font-size: 14px; }
+	ul.side-nav li a:hover {text-decoration: underline; }
+	ul.side-nav li a.active { text-decoration: none; color: #f02424; padding-left: 5px; }
+	ul.side-nav li a.active:before { font-family: 'icomoon'; content: "\e66a"; vertical-align: baseline; }
+	
 /* ==========================================================================
    IMG Menu v content boxu
    ========================================================================== */
@@ -736,6 +795,9 @@ ul.img-menu {
 			background-position: -380px 0;
 		}
 
+.gallery { margin: 25px 0px 0px 0px; text-align: center; }
+.gallery img { float: left; margin: 0 13px 12px 0; display: block; }
+.gallery img:nth-child(4n+4) { margin-right: 0; }
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -791,6 +853,59 @@ footer ul {
 		color: #434343;
 		text-decoration: underline;
 	}
+
+/* ==========================================================================
+   Košík classes
+   ========================================================================== */
+a.button {
+	background: url(../img/bg-input.png);
+	color: rgb(106, 106, 106);
+	padding: 6px;
+	border: none;
+	text-decoration: none;
+	display: block;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-o-border-radius: 3px 3px 3px 3px;
+	-ms-border-radius: 3px 3px 3px 3px;
+	
+	position: absolute;
+	bottom: 20px;
+}
+	.button:hover { text-decoration: underline; }
+	.button.-l { left: 20px; } .button.-r { right: 20px; }
+table.step-one {
+	width: 100%;
+	text-align: center;
+}
+.step-one input, step-one select { font-size: 13px; }
+	table.step-one thead { font-size: 14px; border-bottom: 1px solid #9f9f9f; line-height: 34px;}
+	.step-one thead th {font-weight: 400; } .step-one td { padding: 10px 0px; border-bottom: 1px solid rgba(159, 159, 159, .3); }
+	.step-one th:nth-child(1), .step-one td:nth-child(1) {text-align: left!important; }
+	
+	.step-one tbody tr:hover {background: rgba(0, 0, 0, .5); } .step-one.four tr:hover {background: none; }
+	.step-one td:nth-child(5) { font-weight: 600; font-size: 14px; }
+	.step-one td:nth-child(6) a { font-size: 16px; color: white; text-decoration: none; } .step-one td:nth-child(6) a:hover {color: #a81616; }
+	
+	
+.soucet {
+	position: absolute;
+	right: 20px;
+	bottom: 70px;
+	display: block;
+}
+	.soucet table { width: 250px; text-align: right; line-height: 34px;}
+	.soucet table td.p {font-weight: 600; font-size: 14px; } .soucet table td.pp {font-weight: 600; font-size: 16px; }
+	.soucet table tr:nth-child(2) { border-bottom: 1px solid #9f9f9f; }
+	
+ul.step-two.-l { float: left; } ul.step-two.-r { float: right; }
+ul.step-two {list-style-type: none; width: 45%;}
+	.step-two li.heading { font-size: 14px; border-bottom: 1px solid rgb(159, 159, 159); line-height: 34px; }
+	.step-two li { line-height: 25px; padding-left: 10px;}
+
+p.step-four {text-align: center; padding-top: 50px; margin-bottom: 0px!important; font-size: 14px; }
+	.step-four a { font-weight: 600; color: white; } .step-four a:hover { color: rgb(240, 36, 36); }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
