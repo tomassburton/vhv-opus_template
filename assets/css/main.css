@@ -216,59 +216,59 @@ header form {
    ========================================================================== */
 .gloves {
 	background: url(../img-slideshow/category-bg/bg-gloves.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .shoulders {
 	background: url(../img-slideshow/category-bg/bg-shoulders.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .elbows {
 	background: url(../img-slideshow/category-bg/bg-elbows.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .knees {
 	background: url(../img-slideshow/category-bg/bg-knees.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .goalie {
 	background: url(../img-slideshow/category-bg/bg-goalie.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .lapacka {
 	background: url(../img-slideshow/category-bg/bg-lapacka.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .vyrazecky {
 	background: url(../img-slideshow/category-bg/bg-vyrazecky.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .kalhoty {
 	background: url(../img-slideshow/category-bg/bg-kalhoty.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .vesty {
 	background: url(../img-slideshow/category-bg/bg-vesty.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .hokejky {
 	background: url(../img-slideshow/category-bg/bg-hokejky.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .doplnky {
 	background: url(../img-slideshow/category-bg/bg-doplnky.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .bags {
 	background: url(../img-slideshow/category-bg/bg-tasky.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .hockeyball {
 	background: url(../img-slideshow/category-bg/bg-hockeyball.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 .action {
 	background: url(../img-slideshow/category-bg/bg-action.png) no-repeat;
-	height: 350px;
+	height: 352px;
 }
 
 /* ==========================================================================
@@ -549,14 +549,12 @@ nav.container ul {
 .slideshow {
 	margin-top: 10px;
 	position: relative;
+	
 }
-	.clone {
+	.default {
 		background: url(../img/foreground-slider.png) no-repeat;
 		width: 960px;
 		height: 352px;
-		top: 0px;
-		position: absolute;
-		z-index: 100;
 	}
 	
 	.item {
@@ -719,6 +717,13 @@ nav.container ul {
 			margin-bottom: 10px;
 			text-align: justify;
 		}
+		.content-box ul.list { margin-bottom: 10px; list-style-type: none; }
+			.content-box .list li { line-height: 18px; }
+			.content-box .list li:before {
+				font-family: 'icomoon';
+				content: "\e66a";
+				vertical-align: middle;
+			}
 
 	ul.news {
 		list-style-type: none;
